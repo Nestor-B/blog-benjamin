@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'elegant';
+    src: url('../webfonts/Elegant.ttf');
+}
+@font-face {
+    font-family: 'Fragmentcore';
+    src: url('../webfonts/Fragmentcore.otf');
+}
+
+* {
+    /* text-align: justify !important; */
+    font-family: 'Fragmentcore';
+    color: black;
+    font-weight: 800;
+}
+
+body {
+    font-size: 17px;
+}
+
+h1,h2,h3 {
+    font-weight: bold;
+}
+
+a {
+    color: rgb(19, 18, 18);
+    text-decoration: none !important;
+}
+a:hover h2{
+    color: rgb(72, 72, 247) !important;
+}
+.content.blog img, .wrapper img, img {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1.20em 0;
+}
+.logo {
+    font-family: 'elegant' !important;
+    font-weight: bold;
+}
+.wrapper-logo a {
+    text-decoration: none;
+}
+.blogContent{
+    font-size: 18px;
+}
+
+.mainwrap {
+    display: grid;
+    grid-template-columns: 1fr 32%;
+    justify-content: center;
+    gap: 10px;
+}
+.text-justify{ 
+    text-align: justify !important;
+}
+
+@media (max-width: 770px){
+    aside {
+        margin-top: 2em;
+    }
+    .mainwrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 1px;
+    }
+}
